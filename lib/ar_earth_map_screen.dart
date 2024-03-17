@@ -15,29 +15,35 @@ class _ArEarthMapScreenState extends State<ArEarthMapScreen> {
 
   augmentedRealityViewCreated(ArCoreController coreController) {
     augmentedRealityCoreController = coreController;
-    displayEarthMapSphere(augmentedRealityCoreController!);
+    displayTutor(augmentedRealityCoreController!);
   }
-  displayEarthMapSphere(ArCoreController coreController) async {
-    final ByteData earthTextureBytes = await rootBundle.load("images/earth_map.jpg");
+
+  displayTutor(ArCoreController coreController) async {
+    final ByteData textureBytes = await rootBundle.load("images/tutor.png"); // Use a .png image with a transparent background
     final materials = ArCoreMaterial(
-      color: Colors.blue,
-      textureBytes: earthTextureBytes.buffer.asUint8List(),
+      color: Colors.white,
+      textureBytes: textureBytes.buffer.asUint8List(),
     );
 
-    final sphere = ArCoreSphere(
-        materials: [materials]
+    // Create a very thin box to act as a plane
+    final cube = ArCoreCube(
+      size: vector64.Vector3(0.5, 1.0, 0.001), // The depth is very small to look like a plane
+      materials: [materials],
     );
 
     final node = ArCoreNode(
-      shape: sphere,
-      position: vector64.Vector3(0, 0, -1.5),
+      shape: cube,
+      position: vector64.Vector3(0, 0, -1.5), // Position the image in the AR space
     );
 
     augmentedRealityCoreController!.addArCoreNode(node);
   }
+
+
+
+
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('AR Earth Map'),
@@ -45,9 +51,7 @@ class _ArEarthMapScreenState extends State<ArEarthMapScreen> {
       ),
       body: ArCoreView(
         onArCoreViewCreated: augmentedRealityViewCreated,
-
       ),
     );
   }
-
 }
