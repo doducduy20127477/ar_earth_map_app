@@ -1,4 +1,5 @@
 import 'package:ar_earth_map_app/ar_earth_map_screen.dart';
+import 'package:ar_earth_map_app/avengersCharacters.dart';
 import 'package:ar_earth_map_app/geometricShapes.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: GeometricShapes(),
+      home: AvengersCharacters(),
     );
   }
 }

@@ -87,9 +87,8 @@ class _GeometricShapesState extends State<GeometricShapes> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
-    super.dispose();
+    arCoreController.dispose();
   }
   @override
   Widget build(BuildContext context) {
