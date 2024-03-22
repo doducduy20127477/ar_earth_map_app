@@ -19,7 +19,7 @@ class _ArEarthMapScreenState extends State<ArEarthMapScreen> {
   }
 
   displayTutor(ArCoreController coreController) async {
-    final ByteData textureBytes = await rootBundle.load("images/tutor.png"); // Use a .png image with a transparent background
+    final ByteData textureBytes = await rootBundle.load("assets/tutor_transparent.png");
     final materials = ArCoreMaterial(
       color: Colors.white,
       textureBytes: textureBytes.buffer.asUint8List(),
