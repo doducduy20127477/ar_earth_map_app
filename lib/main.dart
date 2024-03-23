@@ -3,6 +3,8 @@ import 'package:ar_earth_map_app/avengersCharacters.dart';
 import 'package:ar_earth_map_app/geometricShapes.dart';
 import 'package:flutter/material.dart';
 
+import 'custom_3d_object.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AvengersCharacters(),
+      home: Object3DScreen(),
     );
   }
 }
