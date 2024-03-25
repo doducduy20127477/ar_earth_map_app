@@ -5,10 +5,8 @@ class Assets {
   static const String assetsAndroidRobot = 'assets/AndroidRobot.gif';
   static const String assetsArcticFox = 'assets/ArcticFox.gif';
   static const String assetsEarthMap = 'assets/earth_map.jpg';
+  static const String assetsFoxFaceMeshTexture = 'assets/fox_face_mesh_texture.png';
   static const String assetsIronman = 'assets/ironman.png';
   static const String assetsTocoToucan = 'assets/TocoToucan.gif';
-  static const String assetsTutor = 'assets/tutor.png';
-  static const String assetsTutor2 = 'assets/tutor2.webp';
-  static const String assetsTutorTransparent = 'assets/tutor_transparent.png';
 
 }

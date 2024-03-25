@@ -14,6 +14,13 @@ class _Object3DScreenState extends State<Object3DScreen> {
   late ArCoreController arCoreController;
   late String objectSelected;
 
+  @override
+  void dispose() {
+    super.dispose();
+    arCoreController.dispose();
+  }
+
+
   void whenArCoreViewCreated(ArCoreController arCoreController)
   {
     this.arCoreController = arCoreController;
@@ -76,11 +83,6 @@ class _Object3DScreenState extends State<Object3DScreen> {
 
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-    arCoreController.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
