@@ -24,7 +24,7 @@ class _GeometricShapesState extends State<GeometricShapes> {
 
   Future addSphere(ArCoreController coreController) async
   {
-    final ByteData textureBytes = await rootBundle.load("assets/earth_map.jpg");
+    final ByteData textureBytes = await rootBundle.load("assets/earth.jpg");
 
     final materials = ArCoreMaterial(
       color: Color.fromARGB(120, 66, 134, 244),

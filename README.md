@@ -31,6 +31,7 @@
    - Cylinder
 2. AR Avengers `avengersCharacters.dart`:
 3. AR Augmented Face `augmentedFaces.dart`
+4. AR Augmented Images `augmentedImages.dart`
 
 ### Technical and Tools:
 
