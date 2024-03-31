@@ -37,6 +37,7 @@
    - Change metallic
    - Change roughness
    - Change reflectance
+6. Custom Anchored Object onTap `custom_object.dart`
 
 ### Technical and Tools:
 
