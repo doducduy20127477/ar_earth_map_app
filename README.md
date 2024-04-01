@@ -38,6 +38,7 @@
    - Change roughness
    - Change reflectance
 6. Custom Anchored Object onTap `custom_object.dart`
+7. 3D Matrix `matrixRendering.dart`
 
 ### Technical and Tools:
 
