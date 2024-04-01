@@ -39,6 +39,10 @@
    - Change reflectance
 6. Custom Anchored Object onTap `custom_object.dart`
 7. 3D Matrix `matrixRendering.dart`
+8. 3D Objects `custom_3d_object.dart`
+   - Use sfb file to load 3D models: Toucan, Artic Fox, Andy
+   - Remove selected Object
+9. Image Object `quotes.dart`
 
 ### Technical and Tools:
 
